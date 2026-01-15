@@ -63,7 +63,7 @@
 .camera-title p{
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 /* button section */
 .booking-btn{
@@ -92,6 +92,31 @@
 
 }
 .camera-img img{
-    max-width: 440px;
+    max-width: 400px;
     width: 100%;
+}
+
+/* logo section */
+
+.logo-container{
+    border: 1px solid #5e636623;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 34px 62px;
+    
+}
+.logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.logo-image img{
+    height: 30px;
+    width: auto;
+    object-fit: contain;
 }
