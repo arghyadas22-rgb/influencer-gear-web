@@ -4,6 +4,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
+
 /* header section */
 
 .navbar{
@@ -181,4 +184,194 @@
     font-weight: 700;
     line-height: 143%;
     color: #787885;
+}
+
+/* 2nd section */
+
+.section-Featured{
+    max-width: 1110px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 96px;
+    margin-bottom: 100px;
+    
+}
+
+.featured-description h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: rgba(10, 8, 38, 1);
+}
+.featured-description p{
+    color: #6C6C6C;
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: 700;
+}
+.featured-btn{
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer section */
+
+.footer-option{
+    background-color: #161E54;
+    padding: 50px 0;
+    
+}
+
+.section-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 50px; */
+}
+.section-footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    /* margin-top: 50px; */
+    margin-bottom: 5px;
+}
+.section-footer p{
+    color: rgba(217, 219, 225, 1);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: rgba(217, 219, 225, 1);
+    margin-top: 15px;
+}
+
+/* media quary */
+
+@media screen and (max-width:576px) {
+   .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+   } 
+
+   .nav-container ul{
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-top: 10px;
+   }
+   .nav-container ul li a{
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+   }
+
+    /* Camera Section */
+    .camera-section {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .camera-title {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .camera-title h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .camera-title p {
+        font-size: 0.9rem;
+    }
+
+    .camera-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    background-image: url("../images/Circle design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+
+    width: 100%;       
+    max-width: 475px;  
+    aspect-ratio: 1/1; 
+}
+
+    .camera-img img {
+        max-width: 100%;
+    }
+
+    /* Logo Section */
+    .logo-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        max-width: 100%;
+        margin: 40px auto;
+    }
+
+    .logo-image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo-image img {
+        height: 25px;
+        max-width: 80%;
+    }
+
+    /* Product Grid */
+    .product-container {
+        grid-template-columns: 1fr; /* 1 column mobile */
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .product-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Featured Section */
+    .section-Featured {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .featured-description h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .featured-description p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-option {
+        padding: 30px 15px;
+    }
 }
